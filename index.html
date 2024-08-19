@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Umidade e fertilidade do solo</title>
     <link rel="stylesheet" href="public/style.css">
 </head>
+
 <body>
     <main>
-        <section class="header">
+        <section class="header-section">
             <h1>Saúde do solo</h1>
         </section>
 
-        <section class="content">
-            <div class="form-container">
-                <div class="input-group">
+        <section class="container">
+            <div class="div-pai-selecao">
+                <div class="div-selecao">
                     <label for="umidadeSolo">Umidade do solo</label><br>
                     <select id="umidadeSolo">
                         <option value="none">-Selecione-</option>
@@ -23,7 +25,7 @@
                         <option value="alta">Alta</option>
                     </select>
                 </div>
-                <div class="input-group">
+                <div class="div-selecao">
                     <label for="prevTempo">Previsão do Tempo</label><br>
                     <select id="prevTempo">
                         <option value="none">-Selecione-</option>
@@ -31,7 +33,7 @@
                         <option value="não">Não</option>
                     </select>
                 </div>
-                <div class="input-group">
+                <div class="div-selecao">
                     <label for="estCrescimento">Estágio de crescimento</label><br>
                     <select id="estCrescimento">
                         <option value="none">-Selecione-</option>
@@ -41,7 +43,7 @@
                         <option value="colheita">Colheita</option>
                     </select>
                 </div>
-                <div class="input-group">
+                <div class="div-selecao">
                     <label for="tipoSolo">Tipo de solo</label><br>
                     <select id="tipoSolo">
                         <option value="none">-Selecione-</option>
@@ -51,7 +53,7 @@
                         <option value="turfa">Turfa</option>
                     </select>
                 </div>
-                <div class="input-group">
+                <div class="div-selecao">
                     <label for="nivNutri">Nível de nutrientes</label><br>
                     <select id="nivNutri">
                         <option value="none">-Selecione-</option>
@@ -60,7 +62,7 @@
                         <option value="alto">Alto</option>
                     </select>
                 </div>
-                <div class="input-group">
+                <div class="div-selecao">
                     <label for="temperatura">Temperatura</label><br>
                     <select id="temperatura">
                         <option value="none">-Selecione-</option>
@@ -70,14 +72,14 @@
                     </select>
                 </div>
 
-                <div class="button-container">
-                    <button class="submit-button" type="submit" onclick="Prever()">Prever</button>
+                <div class="div-botao">
+                    <button type="submit" onclick="Prever()">Prever</button>
                 </div>
             </div>
 
-            <div class="result-container">
+            <div class="div-resultado">
                 <label for="txtAreaResult">Decisão:</label><br>
-                <textarea name="" id="txtAreaResult" readonly></textarea>
+                <textarea id="txtAreaResult" readonly></textarea>
             </div>
         </section>
     </main>
