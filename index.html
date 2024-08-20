@@ -207,7 +207,10 @@
                 if (featureValue in node.branches) {
                     return this.predict(sample, node.branches[featureValue]);
                 } else {
-                    return "Desconhecido";
+                    // Se o valor exato não for encontrado, busque o caminho mais próximo
+                    const keys = Object.keys(node.branches);
+                    const closestBranch = keys[0];  // Pegue a primeira chave como fallback
+                    return this.predict(sample, node.branches[closestBranch]);
                 }
             }
         }
