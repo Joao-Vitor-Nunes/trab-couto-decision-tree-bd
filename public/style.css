@@ -105,3 +105,22 @@ textarea {
         width: 45%;
     }
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #ffffff;
+    background-color: #2ca914;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    z-index: 1000; /* Garantir que o footer esteja acima de outros elementos */
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
